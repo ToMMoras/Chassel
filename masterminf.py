@@ -8,9 +8,6 @@ for i in range(6):
     couleur = random.choice(COULEURS)  
     code_secret.append(couleur)
 
-saisie = input("Essai : ")
-proposition = list(saisie)
-
 bien_places = 0 
 
 
