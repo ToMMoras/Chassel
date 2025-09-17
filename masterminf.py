@@ -1,29 +1,29 @@
 import random
 
-COULEURS = ["R", "V", "B", "J", "M", "N"] 
+COULEURS = ["R", "V", "B", "J", "M", "N"]  ## choisir les couleurs 
 essai = 1
 
 code_secret = []
-for i in range(6):  
+for i in range(6):                              ##prend 6 valeurs
     couleur = random.choice(COULEURS)  
     code_secret.append(couleur)
 
 bien_places = 0 
 
 
-while essai <= 12 and bien_places <6:
+while essai <= 12 and bien_places <6:            ## 12 essais
 
     saisie = input("Essai : ")
     proposition = list(saisie)
     
-    for i in range(6):
+    for i in range(6):                    ## adapter la valeur (6 devient --)
         if proposition[i] == code_secret[i]:
             bien_places +=1
 
     secret_restant = []
     proposition_restante = []
 
-    for i in range (6):
+    for i in range (6):                ## adapter la valeur (6 devient --)
         if proposition[i] != code_secret[i]:
             secret_restant.append(code_secret[i])
             proposition_restante.append(proposition[i])
@@ -38,5 +38,5 @@ while essai <= 12 and bien_places <6:
 
     print("Bien placés :", bien_places, "Mal placés :", mal_places)
 
-if bien_places == 6:
+if bien_places == 6:                    ## adapter la valeur (6 devient --)
     print("Bravo c'est win")
