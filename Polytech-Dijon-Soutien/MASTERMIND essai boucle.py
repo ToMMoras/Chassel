@@ -15,7 +15,7 @@ while essai <= 12 and bien_places <6:      ##changer le nombre d'essai comme bon
     saisie = input("Essai : ")
     proposition = list(saisie)
 
-    if len != proposition(6):
+    if len(proposition) != 6:
         print("vous devez impérativement mettre 6 lettre présentes parmi : R, V, B, J, M, N")
     
     for i in range(6):                      ##changer le nombre d'inconnu en fonction du choix réaliser ligne 7
