@@ -26,7 +26,7 @@ while essai <= 12 and bien_places <6:      ##changer le nombre d'essai comme bon
 
     secret_restant = []
     proposition_restante = []
-    
+
     for i in range (6):                     ##changer le nombre d'inconnu en fonction du choix réaliser ligne 7
         if proposition[i] != code_secret[i]:
             secret_restant.append(code_secret[i])
@@ -43,3 +43,6 @@ while essai <= 12 and bien_places <6:      ##changer le nombre d'essai comme bon
 
 if bien_places == 6:                            ##changer le nombre d'inconnu en fonction du choix réaliser ligne 7
     print("Bravo c'est win")
+
+else:
+    print("c'est perdu")
