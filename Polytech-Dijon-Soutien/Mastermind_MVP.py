@@ -1,3 +1,4 @@
+#Test
 import random
 
 COULEURS = ["R", "V", "B", "J", "M", "N"] ##changer les lettres comme bon vous semble
