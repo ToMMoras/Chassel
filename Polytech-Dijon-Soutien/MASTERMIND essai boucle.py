@@ -1,7 +1,9 @@
 import random
 
 COULEURS = ["R", "V", "B", "J", "M", "N"] ##changer les lettres comme bon vous semble
+
 essai = 1
+bien_places = 0
 
 code_secret = []
 for i in range(6):                         ##changer le nombre d'inconnu comme bon vous semble
@@ -17,6 +19,7 @@ while essai <= 12 and bien_places <6:      ##changer le nombre d'essai comme bon
 
     if len(proposition) != 6:
         print("vous devez impérativement mettre 6 lettre présentes parmi : R, V, B, J, M, N")
+        continue
     
     for i in range(6):                      ##changer le nombre d'inconnu en fonction du choix réaliser ligne 7
         if proposition[i] == code_secret[i]:
